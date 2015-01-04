@@ -10,9 +10,9 @@
     <property name="hibernate.show_sql">true</property>
     <property name="hibernate.current_session_context_class">thread</property>
     <property name="hibernate.query.factory_class">org.hibernate.hql.internal.classic.ClassicQueryTranslatorFactory</property>
-    <mapping resource="com/util/Ruta.hbm.xml"/>
-    <mapping resource="com/util/Pelicula.hbm.xml"/>
-    <mapping resource="com/util/Genero.hbm.xml"/>
-    <mapping resource="com/util/Categoria.hbm.xml"/>
+    <mapping resource="com/Entidad/Ruta.hbm.xml"/>
+    <mapping resource="com/Entidad/Pelicula.hbm.xml"/>
+    <mapping resource="com/Entidad/Genero.hbm.xml"/>
+    <mapping resource="com/Entidad/Categoria.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.util;
+package com.Entidad;
 
 import net.sf.ehcache.hibernate.HibernateUtil;
 import org.hibernate.Session;

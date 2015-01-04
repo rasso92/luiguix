@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 03/01/2015 10:14:14 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class name="com.Entidad.Categoria" optimistic-lock="version" schema="LUIGUIX" table="CATEGORIA">
+    <id name="idcategoria" type="byte">
+      <column name="IDCATEGORIA" precision="2" scale="0"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="nomcategoria" type="string">
+      <column length="80" name="NOMCATEGORIA" not-null="true"/>
+    </property>
+    <set fetch="select" inverse="true" lazy="true" name="peliculas" table="PELICULA">
+      <key>
+        <column name="IDCATEGORIA" not-null="true" precision="2" scale="0"/>
+      </key>
+      <one-to-many class="com.Entidad.Pelicula"/>
+    </set>
+  </class>
+</hibernate-mapping>

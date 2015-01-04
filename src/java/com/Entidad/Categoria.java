@@ -1,4 +1,4 @@
-package com.util;
+package com.Entidad;
 // Generated 03/01/2015 10:14:14 PM by Hibernate Tools 4.3.1
 
 
